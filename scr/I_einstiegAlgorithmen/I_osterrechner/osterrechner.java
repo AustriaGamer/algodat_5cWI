@@ -1,4 +1,4 @@
-package I_osterrechner;
+package I_einstiegAlgorithmen.I_osterrechner;
 
 import java.util.Scanner;
 
