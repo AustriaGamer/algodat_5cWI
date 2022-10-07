@@ -1,7 +1,8 @@
-package II_basisCodeAlgorithms;
+
 
 import II_basisCodeAlgorithms.II_baseAlgorithms.*;
-import II_basisCodeAlgorithms.I_basis.*;
+import II_basisCodeAlgorithms.I_basis.dataGenerator;
+import III_sortierverfahren.*;
 
 public class test {
     public static void main(String[] args) throws Exception {
@@ -21,5 +22,8 @@ public class test {
         dataGenerator.printArray(baseAlgorithms.revert(arr6));
         System.out.println(" Max: " + baseAlgorithms.max(arr6));
         System.out.println(" Min: " + baseAlgorithms.min(arr6));
+        dataGenerator.printArray(sort.selectionSort(arr6));
+        dataGenerator.printArray(sort.bubbleSort(arr6));
+
     }
 }
