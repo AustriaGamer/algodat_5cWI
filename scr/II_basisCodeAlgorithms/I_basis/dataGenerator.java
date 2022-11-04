@@ -25,7 +25,7 @@ public class dataGenerator {
     }
 
     public static String timeTaken(long time) {
-        long res = System.nanoTime() - time;
+        long res = (System.nanoTime() - time) /1000;
         return Long.toString(res);
     }
 
@@ -37,7 +37,7 @@ public class dataGenerator {
     public static void printArray(int[] data, boolean takeTime) {
         long time = System.nanoTime();
         printArray(data);
-        System.out.print("  Time: " + timeTaken(time) + "ns");
+        System.out.print("  Time: " + timeTaken(time) + "ms");
         System.out.println();
     }
 
