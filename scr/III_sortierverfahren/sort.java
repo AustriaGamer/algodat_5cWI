@@ -33,23 +33,24 @@ public class sort {
     public static int[] insertionSort(int[] data) {
         ArrayList<Integer> sorted = new ArrayList<>();
         for (int integer : data) {
-            for (int i = 0; i < sorted.size(); i++) {
+            for (int i = 0; i < data.length; i++) {
                 if (sorted.size() == 0) {
                     sorted.add(integer);
                     break;
                 }
-                if (sorted.get(i) < integer) {
+                if (sorted.get(i) <= integer) {
                     sorted.add(i, integer);
                     break;
                 }
             }
         }
         int[] res = new int[sorted.size()];
-        int cnt = 0;
+        int cnt = sorted.size()-1;
         for (Integer integer : sorted) {
-            res[0]
+            res[cnt] = integer;
+            cnt--;
         }
-        return sorted.toArray();
+        return res;
     }
 
 }
