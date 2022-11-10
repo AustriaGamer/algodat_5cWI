@@ -3,7 +3,7 @@ package III_sortierverfahren;
 import java.util.ArrayList;
 
 public class sort {
-    public static final int[] selectionSort(int[] data) {
+    public static int[] selectionSort(int[] data) {
         for (int i = 0; i < data.length - 1; i++) {
             for (int j = i + 1; j < data.length; j++) {
                 if (data[i] > data[j]) {
@@ -15,7 +15,7 @@ public class sort {
         }
         return data;
     }
-    public static final int[] bubbleSort(int[] data) {
+    public static int[] bubbleSort(int[] data) {
         int changes;
         do {
             changes = 0;
@@ -33,7 +33,7 @@ public class sort {
     public static int[] insertionSort(int[] data) {
         ArrayList<Integer> sorted = new ArrayList<>();
         for (int integer : data) {
-            for (int i = 0; i < sorted.size(); i++) {
+            for (int i = 0; i < data.length; i++) {
                 if (sorted.size() == 0) {
                     sorted.add(integer);
                     break;
@@ -47,9 +47,10 @@ public class sort {
         int[] res = new int[sorted.size()];
         int cnt = 0;
         for (Integer integer : sorted) {
-            res[0]
+            res[cnt] = integer;
+            cnt++;
         }
-        return sorted.toArray();
+        return res;
     }
 
 }
