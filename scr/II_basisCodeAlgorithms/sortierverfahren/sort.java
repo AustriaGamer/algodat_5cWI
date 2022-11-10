@@ -1,4 +1,4 @@
-package III_sortierverfahren;
+package II_basisCodeAlgorithms.sortierverfahren;
 
 import java.util.ArrayList;
 

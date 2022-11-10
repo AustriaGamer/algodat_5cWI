@@ -1,8 +1,8 @@
-
+package II_basisCodeAlgorithms;
 
 import II_basisCodeAlgorithms.II_baseAlgorithms.*;
 import II_basisCodeAlgorithms.I_basis.dataGenerator;
-import III_sortierverfahren.*;
+import II_basisCodeAlgorithms.sortierverfahren.*;
 
 public class test {
     public static void main(String[] args) throws Exception {
