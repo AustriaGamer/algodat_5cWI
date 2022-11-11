@@ -1,8 +1,6 @@
 package III_algorithmenUndDatenstrukturen;
 
-import III_algorithmenUndDatenstrukturen.list.HTLinkedList;
-
-import java.util.LinkedList;
+import III_algorithmenUndDatenstrukturen.classes.HTLinkedList;
 
 public class Main {
     public static void main(String[] args) {

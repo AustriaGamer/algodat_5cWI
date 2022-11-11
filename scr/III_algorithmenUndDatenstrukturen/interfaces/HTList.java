@@ -1,4 +1,4 @@
-package III_algorithmenUndDatenstrukturen.list;
+package III_algorithmenUndDatenstrukturen.interfaces;
 
 public interface HTList {
     public void add(int value);

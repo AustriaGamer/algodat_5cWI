@@ -1,6 +1,6 @@
-package III_algorithmenUndDatenstrukturen.list;
+package III_algorithmenUndDatenstrukturen.classes;
 
-import III_algorithmenUndDatenstrukturen.node.Node;
+import III_algorithmenUndDatenstrukturen.interfaces.HTList;
 
 public class HTLinkedList implements HTList {
     private Node root;
