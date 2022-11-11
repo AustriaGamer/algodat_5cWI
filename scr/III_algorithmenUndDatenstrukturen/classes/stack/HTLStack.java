@@ -10,13 +10,13 @@ public class HTLStack implements III_algorithmenUndDatenstrukturen.interfaces.HT
 
     @Override
     public int peak() throws NullPointerException{
-        return top.getValue();
+        return top.value();
     }
 
     @Override
     public int pop() throws NullPointerException{
         int res = peak();
-        top = top.getPrevious();
+        top = top.previous();
         return res;
     }
 
@@ -24,10 +24,10 @@ public class HTLStack implements III_algorithmenUndDatenstrukturen.interfaces.HT
     public void printStack() {
         HTLStackScreen screen = top;
         System.out.print("{");
-        while (screen.getPrevious() != null){
-            System.out.print(screen.getValue() + ", ");
-            screen = screen.getPrevious();
+        while (screen.previous() != null){
+            System.out.print(screen.value() + ", ");
+            screen = screen.previous();
         }
-        System.out.print(screen.getValue() + "}");
+        System.out.print(screen.value() + "}");
     }
 }
