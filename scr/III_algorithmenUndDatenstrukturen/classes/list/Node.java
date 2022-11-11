@@ -1,4 +1,4 @@
-package III_algorithmenUndDatenstrukturen.classes;
+package III_algorithmenUndDatenstrukturen.classes.list;
 
 public class Node {
     private int value;
