@@ -37,6 +37,7 @@ public class Main {
                 stack.printStack();
                 break;
             case "q":
+
                 break;
             default:
                 System.out.println("Wrong input");

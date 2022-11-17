@@ -1,7 +1,5 @@
 package III_algorithmenUndDatenstrukturen.classes.queue;
 
-import III_algorithmenUndDatenstrukturen.classes.stack.HTLStackScreen;
-
 public class HTLItem {
     public HTLItem(int value, HTLItem previous, HTLItem next) {
         this.value = value;
