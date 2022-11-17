@@ -43,10 +43,11 @@ public class dataGenerator {
 
     public static void printArray(int[] data) {
         System.out.println();
-        for (int i = 0; i< data.length && i < 100; i++) {
-            System.out.print(String.valueOf(data[i]) + " ");
-            if(i == 99) System.out.print(" ...");
-        }
+        System.out.println("[");
+        for (int datum : data) {
+            System.out.print(String.valueOf(datum) + ", ");
 
+        }
+        System.out.println("]");
     }
 }
