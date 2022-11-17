@@ -1,19 +1,13 @@
 package III_algorithmenUndDatenstrukturen.classes.queue;
 
 public class HTLItem {
-    public HTLItem(int value, HTLItem previous, HTLItem next) {
+    public HTLItem(int value) {
         this.value = value;
-        this.previous = previous;
-        this.next = next;
+        this.next = null;
     }
     private final int value;
-    private final HTLItem previous;
 
     private HTLItem next;
-
-    public HTLItem getPrevious() {
-        return previous;
-    }
 
     public int getValue() {
         return value;

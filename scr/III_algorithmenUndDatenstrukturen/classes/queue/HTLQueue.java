@@ -5,13 +5,13 @@ public class HTLQueue implements III_algorithmenUndDatenstrukturen.interfaces.HT
     private HTLItem last;
     @Override
     public void enqueue(int i) {
-        HTLItem item = new HTLItem(i,null,last);
+        HTLItem item = new HTLItem(i);
         if (first == null){
             first = item;
             last = item;
             return;
         }
-        first.setNext(item);
+        last.setNext(item);
         last=item;
     }
 
@@ -30,6 +30,6 @@ public class HTLQueue implements III_algorithmenUndDatenstrukturen.interfaces.HT
             System.out.print(item.getValue() + ", ");
             item = item.getNext();
         }
-        System.out.print(item.getNext() + "}");
+        System.out.print(item.getValue() + "}");
     }
 }
