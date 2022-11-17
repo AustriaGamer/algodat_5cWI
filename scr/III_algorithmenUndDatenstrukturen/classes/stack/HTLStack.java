@@ -9,13 +9,13 @@ public class HTLStack implements III_algorithmenUndDatenstrukturen.interfaces.HT
     }
 
     @Override
-    public int peak() throws NullPointerException{
+    public int peek() throws NullPointerException{
         return top.value();
     }
 
     @Override
     public int pop() throws NullPointerException{
-        int res = peak();
+        int res = peek();
         top = top.previous();
         return res;
     }

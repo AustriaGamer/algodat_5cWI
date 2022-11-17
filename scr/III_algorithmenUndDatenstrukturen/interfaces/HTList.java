@@ -1,11 +1,11 @@
 package III_algorithmenUndDatenstrukturen.interfaces;
 
 public interface HTList {
-    public void add(int value);
+    void add(int value);
 
-    public int get(int index);
+    int get(int index);
 
-    public void remove(int index);
+    void remove(int index);
 
-    public void printList();
+    void printList();
 }

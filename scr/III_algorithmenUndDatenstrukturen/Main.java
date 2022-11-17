@@ -33,7 +33,7 @@ public class Main {
                 for (int i = 0; i < 11; i++) {
                     System.out.println(stack.pop());
                 }
-                System.out.println(stack.peak());
+                System.out.println(stack.peek());
                 stack.printStack();
             }
             case "q" -> {

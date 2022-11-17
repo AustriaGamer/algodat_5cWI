@@ -1,11 +1,11 @@
 package III_algorithmenUndDatenstrukturen.interfaces;
 
 public interface HTLStack {
-    public void push(int i);
+    void push(int i);
 
-    public int peak();
+    int peek();
 
-    public int pop() throws NullPointerException;
+    int pop() throws NullPointerException;
 
-    public void printStack();
+    void printStack();
 }
